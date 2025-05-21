@@ -14,14 +14,19 @@ function App() {
   return (
     <div className="App">
       <h1>Lista Skinova</h1>
+
       {skins.length === 0 ? (
         <p>Učitavanje skinova...</p>
       ) : (
-        <ul>
+        <div className="skins-list">
           {skins.map((skin) => (
-            <li key={skin.id}>{skin.name}</li>
+            <div key={skin.id} className="skin-card">
+              <img src={skin.image} alt={skin.name} className="skin-image" />
+              <h2>{skin.name}</h2>
+              <p>{skin.description}</p>
+            </div>
           ))}
-        </ul>
+        </div>
       )}
     </div>
   );
