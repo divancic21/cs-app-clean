@@ -1,0 +1,148 @@
+[
+    {
+      "id": "skin-1",
+      "name": "AK-47 | Redline",
+      "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak47_cobra_light_large.7494bfdf4855fd4e6a2dbd983ed0a243c80ef830.png",
+      "description": "Powerful and reliable, the AK-47 is one of the most popular assault rifles in the world. It is most deadly in short, controlled bursts of fire."
+    },
+    {
+      "id": "skin-2",
+      "name": "AWP | Asiimov",
+      "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_asimov_light_large.32d9045f8a2bcd13ca18390cc9fd82026e7195ab.png",
+      "description": "High risk and high reward, the infamous AWP is recognizable by its signature report and one-shot, one-kill policy"
+    },
+    {
+      "id": "skin-3",
+      "name": "Desert Eagle | Blaze",
+      "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_deagle_aa_flames_light_large.dd140c3b359c16ccd8e918ca6ad0b2628151fe1c.png",
+      "description": "As expensive as it is powerful, the Desert Eagle is an iconic pistol that is difficult to master but surprisingly accurate at long range."
+    }
+    ,
+    {
+      "id": "skin-4",
+      "name": "M4A4 | Howl",
+      "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_m4a1_howling_light_large.c64a9fc9fa04b5d10d4b1e200135e59285c8a77c.png",
+      "description": "More accurate but less damaging than its AK-47 counterpart, the M4A4 is the full-auto assault rifle of choice for CTs"
+    },
+    {
+      "id": "skin-5",
+      "name": "Galil AR | Eco",
+      "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_galilar_cu_galil_eco_light_large.7f64e2d77423b3c4263a74caeda18383c2e487d5.png",
+      "description": "A less expensive option among the terrorist-exclusive assault rifles, the Galil AR is a serviceable weapon in medium to long-range combat."
+    },
+    {
+      "id": "skin-6",
+      "name": "MAC-10 | Propaganda",
+      "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_cu_mac10_propaganda_light_large.d8a065b191f3df86a7e2e25d4349790ed56e0593.png",
+      "description": "Essentially a box that bullets come out of, the MAC-10 SMG boasts a high rate of fire, with poor spread accuracy and high recoil as trade-offs."
+    },
+    {
+      "id": "skin-7",
+      "name": "MP9 | Hydra",
+      "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_cu_mp9_hydra_light_large.b7763a811b3bc9d19d04502fba0edc6cbe355766.png",
+      "description": "Manufactured in Switzerland, the cutting-edge MP9 SMG is an ergonomic polymer weapon favored by private security firms."
+    },
+    {
+      "id": "skin-8",
+      "name": "SSG 08 | Dragonfire",
+      "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_cu_ssg08_dragonfire_scope_light_large.482858c9d088454b42e53f02d927a8203c69dfc2.png",
+      "description": "The SSG 08 bolt-action is a low-damage but very cost-effective sniper rifle, making it a smart choice for early-round long-range marksmanship."
+    },
+    {
+      "id": "skin-9",
+      "name": "Famas | Bad Trip",
+      "image": "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposLuoKhRf1fLFcC597t2ygJKCh8j4OrzZgiUG6pwg3--Vrduiiw21qkI5ZzrxIo-SJFc8ZVDV-QO4yLjp1JO16prK1zI97RdYpvZy/512fx384f",
+      "description": "A cheap option for cash-strapped players, the FAMAS effectively fills the niche between more expensive rifles and the less-effective SMGs."
+    },
+    {
+      "id": "skin-10",
+      "name": "M4A1-S | Fade",
+      "image": "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO3lb-NlvPxDLaFlzpC18l4jeHVu42n2Aey-kdrZ2j3LYDHJgJoN1qB_lDtxezpgJPo75XKmHZn6Cgj4X3D30vgjv5IMS8/512fx384f",
+      "description": "With a smaller magazine than its unmuffled counterpart, the silenced M4A1 provides quieter shots with less recoil and better accuracy."
+    },
+    {
+      "id": "skin-11",
+      "name": "AUG | Chameleon",
+      "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_cu_aug_chameleonaire_light_large.ad1d2f62d1481931d8e23e0ab0fbd4e7a61135f7.png",
+      "description": "Powerful and accurate, the AUG scoped assault rifle compensates for its long reload times with low spread and a high rate of fire."
+    },
+    {
+      "id": "skin-12",
+      "name": "Nova | Koi",
+      "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_cu_nova_koi_light_large.28c3fe03f736b48dee10e1e88e77ac02132dcba6.png",
+      "description": "The Nova's rock-bottom price tag makes it a great ambush weapon for a cash-strapped team."
+    },
+    {
+      "id": "skin-13",
+      "name": "MP7 | Bloodsport",
+      "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_gs_mp7_bloodsport_light_large.ab5c304901ceb320482742b041815e7b5e3ccb95.png",
+      "description": "Versatile but expensive, the German-made MP7 SMG is the perfect choice for high-impact close-range combat."
+    },
+    {
+      "id": "skin-14",
+      "name": "P90 | Shapewood",
+      "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_cu_p90_shapewood_light_large.e7744840c89b1b83be82d2f64beb5a6719c47bd3.png",
+      "description": "Easily recognizable for its unique bullpup design, the P90 is a great weapon to shoot on the move due to its high-capacity magazine and low recoil."
+    },
+    {
+      "id": "skin-15",
+      "name": "Negev | Ultralight",
+      "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_negev_cu_negev_ultralight_light_large.f47680cfcd5c2eb1594fd5ae51ed9caf1bb6d9cd.png",
+      "description": "The Negev is a beast that can keep the enemy at bay with its pin-point supressive fire, provided you have the luxury of time to gain control over it."
+    },
+    {
+      "id": "skin-16",
+      "name": "MAG-7 | Justice",
+      "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_gs_mag7_justice_light_large.fcdc73ab779ab093ee7d90d91c1e3c369bbc8d65.png",
+      "description": "The CT-exclusive Mag-7 delivers a devastating amount of damage at close range. Its rapid magazine-style reloads make it a great tactical choice."
+    },
+    {
+      "id": "skin-17",
+      "name": "UMP-45 | Wildchild",
+      "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_cu_ump_clutch_kick_light_large.b57e43c07b433517b1c3bdaa1e52ce44878af481.png",
+      "description": "The misunderstood middle child of the SMG family, the UMP45's small magazine is the only drawback to an otherwise versatile close-quarters automatic."
+    },
+    {
+      "id": "skin-18",
+      "name": "PP-Bizon | Embargo",
+      "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_bizon_cu_bizon_road_warrior_light_large.92dd3aa0346010a6e3a625d01ae4f965195a05d2.png",
+      "description": "The Bizon SMG is low-damage, but offers a uniquely designed high-capacity drum magazine that reloads quickly."
+    },
+    {
+      "id": "skin-19",
+      "name": "Scar-20 | Cardiac",
+      "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_cu_scar20_intervention_light_large.96d9a26cca617207208a836d424d676bcb2ce3b9.png",
+      "description": "The SCAR-20 is a semi-automatic sniper rifle that trades a high rate of fire and powerful long-distance damage for sluggish movement speed and big price tag."
+    },
+    {
+      "id": "skin-20",
+      "name": "SG 553 | Cyrex",
+      "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_cu_sg553_cyrex_light_large.ef2fb1e4d88e8eb7c0efe12e231a773ca1792a4d.png",
+      "description": "The terrorist-exclusive SG 553 is a premium scoped alternative to the AK-47 for effective long-range engagement."
+    },
+    {
+      "id": "skin-21",
+      "name": "M9 Bayonet | Gamma Doppler",
+      "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_knife_m9_bayonet_am_gamma_doppler_phase1_light_large.4980cb2bb09e19a48a04ae19a0e6353426e81cce.png",
+      "description": "It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated."
+    },
+    {
+      "id": "skin-22",
+      "name": "Karambit | Black Laminate",
+      "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_knife_karambit_cu_karam_stonewash_light_large.a45dfc7db5703c23ef3e5733fcc4a7b2a9bf6d73.png",
+      "description": "It has been stonewashed and given a black laminate handle."
+    },
+    {
+      "id": "skin-23",
+      "name": "Butterfly Knife | Freehand",
+      "image": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_knife_butterfly_am_marked_up_90_light_large.a715b25d22f9c716ec30dc8a64aa652dcffab61a.png",
+      "description": " It has been painted black and purple, then decorated with a metallic marker."
+    },
+    {
+      "id": "skin-24",
+      "name": "Nomad Knife | Marble Fade",
+      "image": "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpovbSsLQJf3ObcdTJN_uO3mb-GluX2P77ukGpV7fp9g-7J4cKg3QCx-kY_amimd4DGcVA_Mw3Y_gC-w7vtgpS_7s-fzHtm6CUnsXjYgVXp1n3Y8pC4/512fx384f",
+      "description": "It has been painted with black and silver metallic paints using a marbleizing medium, then candy coated in three colors."
+    }
+  ]
+  
