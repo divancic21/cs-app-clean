@@ -1,5 +1,5 @@
 import { Elysia } from "elysia";
-import cors from "@elysiajs/cors"; // ← ovo trebaš imati
+import cors from "@elysiajs/cors";
 import { readFileSync, writeFileSync } from "fs";
 
 const SKINS_FILE = "./skins.json";
@@ -14,9 +14,17 @@ const saveSkins = (skins) => {
 };
 
 const app = new Elysia()
-  .use(cors()) // ← ovo moraš imati
-  .get("/", () => "👋 Hello from Bun backend!")
+  .use(cors())
+  .get("/", () => "Hello from Bun backend!")
   .get("/api/skins", () => loadSkins())
+  .get("/api/skins/:id", ({ params }) => {
+    const skins = loadSkins();
+    const skin = skins.find((s) => s.id == params.id); // koristi == zbog potencijalnog string/number ID-a
+    if (!skin) {
+      return { error: "Skin not found" };
+    }
+    return skin;
+  })
   .post("/api/skins", ({ body }) => {
     const skins = loadSkins();
     skins.push(body);
@@ -25,4 +33,6 @@ const app = new Elysia()
   })
   .listen(3001);
 
-console.log(`🟢 Backend running at http://${app.server?.hostname}:${app.server?.port}`);
+console.log(
+  `🟢 Backend running at http://${app.server?.hostname}:${app.server?.port}`
+);
