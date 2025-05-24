@@ -1,5 +1,13 @@
 import { useEffect, useState } from 'react';
-import './App.css';
+import {
+  Container,
+  Typography,
+  Grid,
+  Card,
+  CardMedia,
+  CardContent,
+  Box,
+} from '@mui/material';
 
 function App() {
   const [skins, setSkins] = useState([]);
@@ -12,23 +20,58 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <h1>Lista Skinova</h1>
+    <Container sx={{ mt: 6 }}>
+      <Typography variant="h3" component="h1" align="center" gutterBottom>
+        Lista Skinova
+      </Typography>
 
       {skins.length === 0 ? (
-        <p>Učitavanje skinova...</p>
+        <Typography align="center">Učitavanje skinova...</Typography>
       ) : (
-        <div className="skins-list">
+        <Grid container spacing={4} columns={12}>
           {skins.map((skin) => (
-            <div key={skin.id} className="skin-card">
-              <img src={skin.image} alt={skin.name} className="skin-image" />
-              <h2>{skin.name}</h2>
-              <p>{skin.description}</p>
-            </div>
+            <Grid
+              key={skin.id}
+              sx={{
+                gridColumn: {
+                  xs: 'span 12',
+                  sm: 'span 6',
+                  md: 'span 4',
+                },
+              }}
+            >
+              <Card
+                sx={{
+                  transition: 'transform 0.2s, box-shadow 0.2s',
+                  '&:hover': {
+                    transform: 'scale(1.03)',
+                    boxShadow: 6,
+                  },
+                  borderRadius: 3,
+                }}
+                elevation={3}
+              >
+                <CardMedia
+                  component="img"
+                  height="200"
+                  image={skin.image}
+                  alt={skin.name}
+                  sx={{ borderTopLeftRadius: 12, borderTopRightRadius: 12 }}
+                />
+                <CardContent>
+                  <Typography variant="h6" gutterBottom>
+                    {skin.name}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {skin.description}
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
           ))}
-        </div>
+        </Grid>
       )}
-    </div>
+    </Container>
   );
 }
 
