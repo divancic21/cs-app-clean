@@ -1,13 +1,6 @@
 import { useEffect, useState } from 'react';
-import {
-  Container,
-  Typography,
-  Grid,
-  Card,
-  CardMedia,
-  CardContent,
-  Box,
-} from '@mui/material';
+import { Container, Typography, Grid, Card, CardMedia, CardContent } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 function App() {
   const [skins, setSkins] = useState([]);
@@ -41,13 +34,17 @@ function App() {
               }}
             >
               <Card
+                component={Link}
+                to={`/skin/${skin.id}`}
                 sx={{
+                  textDecoration: 'none',
                   transition: 'transform 0.2s, box-shadow 0.2s',
                   '&:hover': {
                     transform: 'scale(1.03)',
                     boxShadow: 6,
                   },
                   borderRadius: 3,
+                  color: 'inherit',
                 }}
                 elevation={3}
               >
