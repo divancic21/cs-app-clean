@@ -82,6 +82,7 @@ bun install
 ### Pokretanje backenda
 
 ```bash
+cd ..
 cd backend
 bun run server.js
 ```
