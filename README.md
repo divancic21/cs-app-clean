@@ -12,23 +12,24 @@ Frontend je napravljen pomoću **React + Vite + MUI**, a backend koristi **Bun +
 cs-app-clean/
 │
 ├── backend/
-│   ├── server.js              # Elysia server
-│   └── skins.json             # JSON baza skinova
+│   ├── server.js              # Elysia server – služi za izlaganje REST API-ja koji vraća podatke iz skins.json
+│   └── skins.json             # JSON baza skinova – simulacija baze podataka s podacima o skinovima
 │
 ├── frontend/
 │   ├── public/
-│   │   └── ikona.png          # favicon
+│   │   └── ikona.png          # favicon – ikonica prikazana u tabu preglednika
 │   │
 │   ├── src/
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │   ├── SkinDetail.jsx
-│   │   └── ThemeContext.js
-│   │
-│   ├── index.html             # HTML entry point
-│   └── vite.config.js         # Vite konfiguracija
+│   │   ├── App.jsx            # Glavna React komponenta – definira osnovnu strukturu UI-ja i koristi druge komponente
+│   │   ├── main.jsx           # Ulazna točka aplikacije – ovdje se React aplikacija montira na `#root` u `index.html`
+│   │   ├── SkinDetail.jsx     # Komponenta koja prikazuje detalje pojedinog skin-a (slika, ime, opis itd.)
+│   │   └── ThemeContext.js    # React Context – omogućuje aplikaciji da dijeli podatke o temi (dark/light) između komponenti
 │
-└── README.md
+│   ├── index.html             # HTML entry point – osnovna HTML stranica u koju se "ubacuje" React aplikacija
+│   └── vite.config.js         # Vite konfiguracija – postavke build alata koji pokreće i bundla frontend
+│
+└── README.md                  # Dokumentacija s uputama za instalaciju i pokretanje aplikacije
+
 ```
 
 
