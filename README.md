@@ -58,6 +58,7 @@ cs-app-clean/
 ```bash
 git clone https://github.com/divancic21/cs-app-clean.git
 cd cs-app-clean
+```
 
 ### Backend
 
