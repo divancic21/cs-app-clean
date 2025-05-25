@@ -6,10 +6,9 @@ Frontend je napravljen pomoću **React + Vite + MUI**, a backend koristi **Bun +
 
 ---
 
+```
 ## 📁 Struktura projekta
 
-```
-```
 cs-app-clean/
 │
 ├── backend/
@@ -32,7 +31,7 @@ cs-app-clean/
 └── README.md
 ```
 
-````
+
 
 ---
 
