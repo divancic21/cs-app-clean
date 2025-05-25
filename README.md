@@ -85,8 +85,8 @@ cd backend
 bun run server.js
 ```
 
-➡ Backend se pokreće na: `http://localhost:3001`
-➡ Ruta: `GET /api/skins` vraća JSON iz `skins.json`
+Backend se pokreće na: `http://localhost:3001`
+Ruta: `GET /api/skins` vraća JSON iz `skins.json`
 
 ---
 
