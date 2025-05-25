@@ -1,15 +1,110 @@
-# cs-app-clean
 
-To install dependencies:
+---
+
+```markdown
+# CS2 Skins Application
+
+Frontend je napravljen pomoću **React + Vite + MUI**, a backend koristi **Bun + Elysia** za serviranje skinova iz `skins.json`.
+
+---
+
+## 📁 Struktura projekta
+
+```
+
+cs-app-clean/
+│
+├── backend/
+│   ├── server.js              # Elysia server
+│   └── skins.json             # JSON baza skinova
+│
+├── frontend/
+│   ├── public/
+│   │   └── ikona.png          # favicon
+│   │
+│   ├── src/
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   ├── SkinDetail.jsx
+│   │   └── ThemeContext.js
+│   │
+│   ├── index.html             # HTML entry point
+│   └── vite.config.js         # Vite konfiguracija
+│
+└── README.md
+
+````
+
+---
+
+## Tehnologije
+
+### 🔙 Backend
+- [**Bun**](https://bun.sh) – ultrabrzi JS runtime
+- [**Elysia**](https://elysiajs.com) – minimalistički backend framework
+- `@elysiajs/cors` – CORS middleware
+
+### 🌐 Frontend
+- [**Vite**](https://vitejs.dev) – moderan React build alat
+- [**React**](https://reactjs.org)
+- [**Material UI (MUI)**](https://mui.com)
+- [**React Router DOM**](https://reactrouter.com)
+- [**React Icons**](https://react-icons.github.io/react-icons)
+
+---
+
+## Instalacija
+
+### Backend
 
 ```bash
+cd backend
+bun install
+````
+
+### Frontend
+
+```bash
+cd frontend
 bun install
 ```
 
-To run:
+---
+
+## Pokretanje aplikacije
+
+### Pokretanje backenda
 
 ```bash
-bun run index.ts
+cd backend
+bun run server.js
 ```
 
-This project was created using `bun init` in bun v1.2.13. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+➡ Backend se pokreće na: `http://localhost:3001`
+➡ Ruta: `GET /api/skins` vraća JSON iz `skins.json`
+
+---
+
+### 🌐 Pokretanje frontenda
+
+```bash
+cd frontend
+bun run dev
+```
+
+➡ Frontend se pokreće na: `http://localhost:5173`
+➡ `App.jsx` koristi `fetch("http://localhost:3001/api/skins")` da povuče skinove
+
+---
+
+## API Endpoint
+
+```http
+GET http://localhost:3001/api/skins
+```
+
+➡ Servira podatke iz `backend/skins.json`
+
+---
+
+
