@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from "react";
 import {
   Container,
   Typography,
@@ -6,30 +6,72 @@ import {
   Card,
   CardMedia,
   CardContent,
-} from '@mui/material';
-import { Link } from 'react-router-dom';
+  TextField,
+  Box,
+  IconButton,
+} from "@mui/material";
+import { Brightness4, Brightness7 } from "@mui/icons-material";
+import { Link } from "react-router-dom";
+import { useTheme } from "@mui/material/styles";
+import { ColorModeContext } from "./ThemeContext";
 
 function App() {
   const [skins, setSkins] = useState([]);
+  const [search, setSearch] = useState("");
+
+  const theme = useTheme();
+  const colorMode = useContext(ColorModeContext);
 
   useEffect(() => {
-    fetch('http://localhost:3001/api/skins')
+    fetch("http://localhost:3001/api/skins")
       .then((res) => res.json())
       .then((data) => setSkins(data))
-      .catch((err) => console.error('Greška pri dohvaćanju skinova:', err));
+      .catch((err) => console.error("Greška pri dohvaćanju skinova:", err));
   }, []);
 
   return (
-    <Container sx={{ mt: 6, mb: 6 }}>
+    <Container
+      maxWidth="xl"
+      sx={{
+        mt: 6,
+        mb: 6,
+        bgcolor: theme.palette.background.default,
+        minHeight: "100vh",
+        padding: 4,
+        borderRadius: 4,
+      }}
+    >
       <Typography
         variant="h3"
         component="h1"
         align="center"
         gutterBottom
-        sx={{ fontWeight: 'bold', color: '#1976d2' }}
+        sx={{ fontWeight: "bold", color: theme.palette.primary.main, mb: 4 }}
       >
         Counter Strike 2 Skins
       </Typography>
+
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          mb: 4,
+          flexWrap: "wrap",
+          gap: 2,
+        }}
+      >
+        <TextField
+          label="Pretraži skinove..."
+          variant="outlined"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          sx={{ maxWidth: 400, width: "100%" }}
+        />
+        <IconButton onClick={colorMode.toggleColorMode}>
+          {theme.palette.mode === "dark" ? <Brightness7 /> : <Brightness4 />}
+        </IconButton>
+      </Box>
 
       {skins.length === 0 ? (
         <Typography align="center" sx={{ mt: 4 }}>
@@ -39,75 +81,75 @@ function App() {
         <Grid
           container
           spacing={4}
-          columns={{ xs: 4, sm: 8, md: 12, lg: 16 }}
           sx={{
-            display: 'grid',
+            display: "grid",
             gridTemplateColumns: {
-              xs: 'repeat(2, 1fr)',   // 2 kolone na malim ekranima
-              sm: 'repeat(4, 1fr)',   // 4 kolone na srednjim ekranima
-              md: 'repeat(4, 1fr)',   // 4 kolone na većim ekranima
-              lg: 'repeat(6, 1fr)',   // 6 kolona na velikim ekranima
+              xs: "repeat(2, 1fr)",
+              sm: "repeat(3, 1fr)",
+              md: "repeat(4, 1fr)",
+              lg: "repeat(6, 1fr)",
             },
           }}
         >
-          {skins.map((skin) => (
-            <Grid
-              key={skin.id}
-              sx={{
-                gridColumn: 'span 1', // svaki item zauzima jednu kolonu
-              }}
-            >
-              <Card
-                component={Link}
-                to={`/skin/${skin.id}`}
-                elevation={4}
-                sx={{
-                  height: '100%',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  textDecoration: 'none',
-                  color: 'inherit',
-                  borderRadius: 3,
-                  transition: 'transform 0.25s ease, box-shadow 0.25s ease',
-                  '&:hover': {
-                    transform: 'scale(1.05)',
-                    boxShadow: 8,
-                  },
-                  backgroundColor: '#f0f4ff',
-                }}
-              >
-                <CardMedia
-  component="img"
-  height="180"
-  image={skin.image}
-  alt={skin.name}
-  sx={{
-    width: '100%',
-    height: 180,
-    objectFit: 'contain',    // Čitava slika se vidi, nije rastegnuta, a cijela je unutar visine 180px
-    borderTopLeftRadius: 12,
-    borderTopRightRadius: 12,
-    backgroundColor: '#f5f5f5', // opcionalno, da se vidi pozadina gdje je prazno oko slike
-  }}
-/>
-
-                <CardContent sx={{ flexGrow: 1 }}>
-                  <Typography
-                    variant="h6"
-                    gutterBottom
-                    sx={{ fontWeight: '600', color: '#0d47a1' }}
-                  >
-                    {skin.name}
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary" sx={{ minHeight: 60 }}>
-                    {skin.description.length > 100
-                      ? skin.description.slice(0, 100) + '...'
-                      : skin.description || 'Nema opisa.'}
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-          ))}
+          {skins
+            .filter((skin) =>
+              skin.name.toLowerCase().includes(search.toLowerCase())
+            )
+            .map((skin) => (
+              <Grid key={skin.id} sx={{ gridColumn: "span 1" }}>
+                <Card
+                  component={Link}
+                  to={`/skin/${skin.id}`}
+                  elevation={6}
+                  sx={{
+                    height: "100%",
+                    display: "flex",
+                    flexDirection: "column",
+                    textDecoration: "none",
+                    color: "inherit",
+                    borderRadius: 3,
+                    transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                    "&:hover": {
+                      transform: "translateY(-5px)",
+                      boxShadow: 12,
+                    },
+                    backgroundColor: theme.palette.background.paper,
+                  }}
+                >
+                  <CardMedia
+                    component="img"
+                    height="180"
+                    image={skin.image}
+                    alt={skin.name}
+                    sx={{
+                      width: "100%",
+                      objectFit: "contain",
+                      backgroundColor: "#f0f4f8",
+                      borderTopLeftRadius: 12,
+                      borderTopRightRadius: 12,
+                    }}
+                  />
+                  <CardContent sx={{ flexGrow: 1 }}>
+                    <Typography
+                      variant="h6"
+                      gutterBottom
+                      sx={{ fontWeight: 600, color: theme.palette.primary.dark }}
+                    >
+                      {skin.name}
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      color="text.secondary"
+                      sx={{ minHeight: 60 }}
+                    >
+                      {skin.description?.length > 100
+                        ? skin.description.slice(0, 100) + "..."
+                        : skin.description || "Nema opisa."}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+            ))}
         </Grid>
       )}
     </Container>
