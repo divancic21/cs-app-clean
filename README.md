@@ -70,6 +70,7 @@ bun install
 ### Frontend
 
 ```bash
+cd ..
 cd frontend
 bun install
 ```
@@ -93,6 +94,8 @@ Ruta: `GET /api/skins` vraća JSON iz `skins.json`
 ### Pokretanje frontenda
 
 ```bash
+new terminal
+cd cs-app-clean
 cd frontend
 bun run dev
 ```
