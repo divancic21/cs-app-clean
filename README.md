@@ -7,7 +7,7 @@ Frontend je napravljen pomoću **React + Vite + MUI**, a backend koristi **Bun +
 ---
 
 ```
-## 📁 Struktura projekta
+## Struktura projekta
 
 cs-app-clean/
 │
@@ -37,12 +37,12 @@ cs-app-clean/
 
 ## Tehnologije
 
-### 🔙 Backend
+### Backend
 - [**Bun**](https://bun.sh) – ultrabrzi JS runtime
 - [**Elysia**](https://elysiajs.com) – minimalistički backend framework
 - `@elysiajs/cors` – CORS middleware
 
-### 🌐 Frontend
+### Frontend
 - [**Vite**](https://vitejs.dev) – moderan React build alat
 - [**React**](https://reactjs.org)
 - [**Material UI (MUI)**](https://mui.com)
