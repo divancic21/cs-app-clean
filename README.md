@@ -51,7 +51,7 @@ cs-app-clean/
 
 ---
 
-## Instalacija
+## Instalacija Windows
 
 ## Kloniranje repozitorija
 
@@ -70,8 +70,65 @@ bun install
 ### Frontend
 
 ```bash
-cd ..
-cd frontend
+cd ../frontend
+bun install
+```
+
+---
+
+## Pokretanje aplikacije
+
+### Pokretanje backenda
+
+```bash
+cd ../backend
+bun run server.js
+```
+
+Backend se pokreće na: `http://localhost:3001`
+Ruta: `GET /api/skins` vraća JSON iz `skins.json`
+
+---
+
+### Pokretanje frontenda
+
+```bash
+new terminal
+cd cs-app-clean/frontend
+bun run dev
+```
+
+Frontend se pokreće na: `http://localhost:5173`
+`App.jsx` koristi `fetch("http://localhost:3001/api/skins")` da povuče skinove
+
+---
+
+## Instalacija MAC/Linux
+
+## Instalacija BUN-a (ukoliko nije instaliran)
+
+```bash
+curl -fsSL https://bun.sh/install | bash
+```
+
+## Kloniranje repozitorija
+
+```bash
+git clone https://github.com/divancic21/cs-app-clean.git
+cd cs-app-clean
+```
+
+### Backend
+
+```bash
+cd backend
+bun install
+````
+
+### Frontend
+
+```bash
+cd ../frontend
 bun install
 ```
 
@@ -96,8 +153,7 @@ Ruta: `GET /api/skins` vraća JSON iz `skins.json`
 
 ```bash
 new terminal
-cd cs-app-clean
-cd frontend
+cd cs-app-clean/frontend
 bun run dev
 ```
 
