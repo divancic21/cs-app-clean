@@ -53,6 +53,12 @@ cs-app-clean/
 
 ## Instalacija
 
+## Kloniranje repozitorija
+
+```bash
+git clone https://github.com/divancic21/cs-app-clean.git
+cd cs-app-clean
+
 ### Backend
 
 ```bash
@@ -83,15 +89,15 @@ bun run server.js
 
 ---
 
-### 🌐 Pokretanje frontenda
+### Pokretanje frontenda
 
 ```bash
 cd frontend
 bun run dev
 ```
 
-➡ Frontend se pokreće na: `http://localhost:5173`
-➡ `App.jsx` koristi `fetch("http://localhost:3001/api/skins")` da povuče skinove
+Frontend se pokreće na: `http://localhost:5173`
+`App.jsx` koristi `fetch("http://localhost:3001/api/skins")` da povuče skinove
 
 ---
 
@@ -101,7 +107,7 @@ bun run dev
 GET http://localhost:3001/api/skins
 ```
 
-➡ Servira podatke iz `backend/skins.json`
+Servira podatke iz `backend/skins.json`
 
 ---
 
