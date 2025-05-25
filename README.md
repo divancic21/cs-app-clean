@@ -1,7 +1,5 @@
 
 ---
-
-```markdown
 # CS2 Skins Application
 
 Frontend je napravljen pomoću **React + Vite + MUI**, a backend koristi **Bun + Elysia** za serviranje skinova iz `skins.json`.
@@ -11,7 +9,7 @@ Frontend je napravljen pomoću **React + Vite + MUI**, a backend koristi **Bun +
 ## 📁 Struktura projekta
 
 ```
-
+```
 cs-app-clean/
 │
 ├── backend/
@@ -32,6 +30,7 @@ cs-app-clean/
 │   └── vite.config.js         # Vite konfiguracija
 │
 └── README.md
+```
 
 ````
 
