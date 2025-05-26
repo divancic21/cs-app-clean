@@ -26,7 +26,7 @@ cs-app-clean/
 │   │   └── ThemeContext.js    # React Context – omogućuje aplikaciji da dijeli podatke o temi (dark/light) između komponenti
 │
 │   ├── index.html             # HTML entry point – osnovna HTML stranica u koju se "ubacuje" React aplikacija
-│   └── vite.config.js         # Vite konfiguracija – postavke build alata koji pokreće i bundla frontend
+│   └── vite.config.js         # Vite konfiguracija – postavke build alata koji pokreće i bundla frontend te vite PWA konfiguracija
 │
 └── README.md                  # Dokumentacija s uputama za instalaciju i pokretanje aplikacije
 
@@ -49,6 +49,7 @@ cs-app-clean/
 - [**Material UI (MUI)**](https://mui.com)
 - [**React Router DOM**](https://reactrouter.com)
 - [**React Icons**](https://react-icons.github.io/react-icons)
+- [**vite-plugin-pwa**](https://vite-pwa-org.netlify.app/workbox/)
 
 ---
 
